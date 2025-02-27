@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { TrendingContext } from '../../context/TrendingContext';
 import TrendingCard from '../showing/TrendingCard';
 
-const Home = () => {
+export default function Home() {
     const trendingList = useContext(TrendingContext);
     return <>
         <section>
@@ -41,7 +41,7 @@ const Home = () => {
 
         <div>
             <div className='container px-4'>
-                <h2 className='text-black text-4xl font-bold my-3'>Now Playing</h2>
+                <h2 className='text-black text-4xl font-bold my-3'>Trending list</h2>
                 <div className='grid grid-cols-4 gap-4'>
                     {trendingList&&trendingList.map((info) =><TrendingCard key={info.product_code} object={info}/>)}
                 </div>
@@ -50,5 +50,3 @@ const Home = () => {
 
     </>
 }
-
-export default Home;
