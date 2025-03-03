@@ -36,3 +36,131 @@ section{
 .bro{
     font-size: 2rem;
 }
+
+.bro2{
+    font-size: 1.2rem;
+}
+
+.one{
+    width: 250px;
+}
+
+.imagewidth {
+    width: 200px;  
+    height: 200px; 
+    object-fit: cover; 
+  }
+
+#sec5{
+    height: 80vh;
+    background-image: url('https://wallpapercrafter.com/desktop3/905563-hot-girl-hd-widescreen-1920x1080-healthy-eating.jpg');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background-color: #000;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.5;
+    background-color: #000;
+}
+
+.word1{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.sizee{
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+}
+
+.word2{
+    position: absolute;
+    top: 48%;
+    left: 5%;
+}
+
+.word3{
+    position: absolute;
+    top: 58%;
+    left: 5%;
+}
+
+.size1{
+    font-size: 1.5rem;
+}
+
+.cen{
+    margin-left: 50%;
+    margin-top: 2%;
+}
+
+.size2{
+    font-size: 3rem;
+}
+
+.ya::placeholder{
+    color: white;
+}
+
+.sizze{
+    width: 1rem;
+}
+
+.cen2{
+    margin-top: 1.6%;
+}
+
+#_section{
+    height: 85vh;
+    background-image: url('https://naturalnutmeg.com/wp-content/uploads/2025/02/Healthy-food-clean-eating-selection-fruit-vegetable-seeds-superfood-cereal-leaf-vegetable-on-gray-concrete-background-768x512.jpg');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+#_sec2{
+    height: 85vh;
+    background-image: url('https://img.freepik.com/premium-photo/supermarket-basket-with-location-icon-realistic-3d-render-shopping-concept-market-shopping_175994-20403.jpg');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+.quote2{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size: 4rem;
+}
+
+.quote3{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    font-size: 1.5rem;
+}
+
+.shape{
+    width: 180px;
+    height: 180px;
+}

@@ -9,8 +9,7 @@ export function TrendingContextProvider(props) {
     const [trendingList, setTrendingList] = useState([]);
 
     useEffect(() => {
-        AxiosInstance.get('category').then((resp) => resp.data).then((results) => {    
-            
+        AxiosInstance.get('category').then((resp) => resp.data.data.flatMap(category => category.items).slice(0, 4)).then((results) => { 
             setTrendingList(results)   
                      
         })

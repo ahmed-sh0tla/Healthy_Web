@@ -39,7 +39,6 @@ const Navbar = () => {
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                 <NavLink to="/" className="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-green-600 hover:text-white no-underline" aria-current="page">Home</NavLink>
                 <NavLink to="/recipes" className="rounded-md px-3 py-2 text-sm font-medium text-gray-400  hover:bg-green-600 hover:text-white">Recipes</NavLink>
-                <NavLink to="/meals-plan" className="rounded-md px-3 py-2 text-sm font-medium text-gray-400  hover:bg-green-600 hover:text-white">Meals Plan</NavLink>
                 <NavLink to="/store" className="rounded-md px-3 py-2 text-sm font-medium text-gray-400  hover:bg-green-600 hover:text-white">Store</NavLink>
                 <NavLink to="/login" className="rounded-md px-3 py-2 text-sm font-medium text-gray-400  hover:bg-green-600 hover:text-white">LOGIN</NavLink>
               </div>
