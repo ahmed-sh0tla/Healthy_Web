@@ -3,25 +3,31 @@ import { Link } from 'react-router'
 
 export default function TrendingCard({ object }) {
 
-    const { product_name, image,product_nutrition_info, price ,product_code} = object
+    const { product_name, image, product_nutrition_info, product_code } = object
 
     return <>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mb-15">
-            <img class="shape ms-25 rounded-3xl" src={image} alt="food"/>
-                <div class="px-6 py-4">
-                    <div class="font-bold text-lg mb-2">{product_name}</div>
-                    <p class="text-gray-700 text-base">
-                    {product_nutrition_info.slice(0,110)}..
-                    </p>
-                    
-                </div>
-                <Link to={'/store-info:product_code'}><button className='btn rounded-xl ps-5 pe-6 pt-2.5 pb-2.5 bg-green-400 text-white hover:bg-green-700 font-mono ms-35'>Order</button></Link>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Healthy</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Natural</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Organic</span>
-                </div>
-                
+        <div className="max-w-sm md:max-w-md lg:max-w-lg rounded-lg overflow-hidden shadow-lg mb-10 bg-white p-4">
+            <img className="rounded-3xl mx-auto w-full max-w-80 h-64 object-cover" src={image} alt="food" />
+            <div className="px-6 py-4">
+                <div className="font-bold text-lg mb-2 text-center">{product_name}</div>
+                <p className="text-gray-700 text-sm">
+                    {product_nutrition_info.slice(0, 110)}...
+                </p>
+            </div>
+            <div className="text-center">
+                <Link to={`/product/info/${product_code}`}>
+                    <button className="btn rounded-xl px-6 py-2.5 bg-green-400 text-white hover:bg-green-700 font-mono mt-2">
+                        Order
+                    </button>
+                </Link>
+            </div>
+            <div className="px-6 pt-4 pb-2 flex flex-wrap justify-center">
+                {["Healthy", "Natural", "Organic"].map((tag) => (
+                    <span key={tag} className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">
+                        #{tag}
+                    </span>
+                ))}
+            </div>
         </div>
     </>
 }
